@@ -1,41 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+	margin: 1rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-title {
+	text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.centered {
+	text-align: center;
+	margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Star Wars */
+
+.characters {
+	padding: 0;
+	list-style-type: circle;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
 }
 
-.card {
-  padding: 2em;
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	gap: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.button {
+	background-color: transparent;
+	border: 1px solid black;
+	color: black;
+	border-radius: 4px;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+/* Countries */
+
+.countries {
+	padding: 0;
+	list-style-type: none;
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+	align-items: center;
+	margin: 3rem auto 0 auto;
+}
+
+.country {
+	border-radius: 8px;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+
+.country .country__figure {
+	margin: 0;
+}
+
+.country .country__img {
+	aspect-ratio: 3/2;
+	max-height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.country .country__figcaption {
+	padding: 1rem;
+}
+
+.country .country__title {
+	text-align: center;
+	margin: 0;
 }
